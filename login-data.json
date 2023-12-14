@@ -1,0 +1,16 @@
+{
+   "accounts": {
+    "henriquecbsfn@gmail.com": {
+        "saldo": 9999.00,
+        "nome": "Henrique Chamon",
+        "numero": "31971263457",
+        "senha": "123456"
+    },
+    "emailteste@henriquechamon.com":{
+        "saldo": 1500.00,
+        "nome": "Conta Teste",
+        "numero": "111111111",
+        "senha": "fofo123"
+    }
+   }
+}

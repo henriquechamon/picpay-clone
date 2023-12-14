@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "picpay-copy",
+    "slug": "picpay-copy",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "splash": {
+      "image": "./Src/Assets/logo-branca.png",
+      "backgroundColor": "#07cc75",
+      "resizeMode": "contain"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./Src/Assets/picpay-full.jpg",
+          "color": "#ffffff",
+          "sounds": [
+            "./local/assets/notification-sound.wav",
+            "./local/assets/notification-sound-other.wav"
+          ]
+        }
+      ]
+    ]
+  }
+}
