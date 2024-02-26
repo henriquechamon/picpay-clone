@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import * as Notifications from 'expo-notifications';
 import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Icon from 'react-native-vector-icons/FontAwesome'; 
@@ -26,6 +25,7 @@ export default function Home({ navigation }) {
   const handleTransferir = () => {
     navigation.navigate('Transferir');
   };
+
   const handleLogout = () => {
     AsyncStorage.clear()
     console.log('An user has logged out.')
@@ -56,7 +56,7 @@ export default function Home({ navigation }) {
         </>
       )}
  
-     <CardAcoes handleTransferir={handleTransferir} ></CardAcoes>
+     <CardAcoes handleTransferir={handleTransferir}></CardAcoes>
       <TouchableOpacity style={styles.logoutButton} onPress={handleLogout}>
         <Text style={styles.logoutText}>Logout</Text>
       </TouchableOpacity>

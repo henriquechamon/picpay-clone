@@ -2,12 +2,15 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, TouchableOpacity, Modal, StyleSheet } from 'react-native';
 
 
-export default function CardAcoes({ handleTransferir }) {
+export default function CardAcoes({ handleTransferir, handleNotify }) {
     return (
       <View style={styles.card}>
         <Text style={styles.showBalanceText}>Conta PicPay:</Text>
         <TouchableOpacity style={styles.transferButton} onPress={handleTransferir}>
           <Text style={styles.transferLabel}>Transferir</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.transferButton} onPress={handleNotify}>
+          <Text style={styles.transferLabel}>Notificações</Text>
         </TouchableOpacity>
       </View>
     );

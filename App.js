@@ -17,6 +17,7 @@ export default function App() {
       <Stack.Screen name="Home" component={Home} options={{ headerShown: false}}/>
       <Stack.Screen name="Transferir" component={Transferir} options={{ headerShown: true}}/>
       <Stack.Screen name="Comprovante" component={Comprovante} options={{ headerShown: true}}/>
+
     </Stack.Navigator>
   </NavigationContainer>
   );
